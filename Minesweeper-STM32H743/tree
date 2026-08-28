@@ -1,0 +1,89 @@
+Minesweeper-STM32H743
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+│
+├── docs/
+│   ├── architecture.md
+│   ├── hardware.md
+│   ├── software_design.md
+│   ├── state_machine.md
+│   └── debugging.md
+│
+├── app/
+│   ├── minesweeper/
+│   │   ├── minesweeper.c
+│   │   ├── minesweeper.h
+│   │   ├── game_logic.c
+│   │   └── game_logic.h
+│   │
+│   ├── input/
+│   │   ├── input_manager.c
+│   │   └── input_manager.h
+│   │
+│   ├── display/
+│   │   ├── game_display.c
+│   │   └── game_display.h
+│   │
+│   └── game/
+│       ├── game_state.c
+│       └── game_state.h
+│
+├── bsp/
+│   ├── board.c
+│   ├── board.h
+│   ├── clock_config.c
+│   └── clock_config.h
+│
+├── drivers/
+│   ├── gpio/
+│   │   ├── gpio.c
+│   │   └── gpio.h
+│   │
+│   ├── button/
+│   │   ├── button.c
+│   │   └── button.h
+│   │
+│   ├── display/
+│   │   ├── oled.c
+│   │   └── oled.h
+│   │
+│   ├── buzzer/
+│   │   ├── buzzer.c
+│   │   └── buzzer.h
+│   │
+│   ├── uart/
+│   │   ├── uart.c
+│   │   └── uart.h
+│   │
+│   └── timer/
+│       ├── timer.c
+│       └── timer.h
+│
+├── rtos/
+│   ├── tasks.c
+│   ├── tasks.h
+│   ├── queues.c
+│   ├── queues.h
+│   ├── mutex.c
+│   └── mutex.h
+│
+├── middleware/
+│   └── ...
+│
+├── Core/
+│   ├── Inc/
+│   └── Src/
+│
+├── Drivers/
+│   ├── CMSIS/
+│   └── STM32H7xx_HAL_Driver/
+│
+├── tests/
+│   ├── test_game_logic.c
+│   ├── test_flood_fill.c
+│   └── test_mines.c
+│
+├── CMakeLists.txt
+└── Makefile
